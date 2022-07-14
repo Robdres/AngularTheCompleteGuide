@@ -1,0 +1,12 @@
+<div class="container">
+  <input class="form-control"
+    [(ngModel)]= "username"
+    (input) = "changeState()"
+  /> 
+  <p>{{ username }}</p>
+  <button class="btn btn-primary"
+    (click)="reset()"
+    [disabled]="state">
+    Reset
+  </button>
+</div>
